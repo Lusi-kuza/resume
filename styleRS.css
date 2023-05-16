@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@font-face {
+  font-family: "WC Mano Negra Bta";
+  src: url("wcmanonegrabta.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  font-family: "Balsamiq Sans", cursive;
+  color: #141d2e;
+  min-width: 565px;
+  background-image: linear-gradient(180deg, #9ed0dd, #f7f7f7, #cee2fb);
+}
+
+header {
+  background-image: url(IMG_3619.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+header h1 {
+  color: #ffd700;
+  font-family: "WC Mano Negra Bta";
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: 900;
+  text-shadow: 14px 1px 4px #141d2e;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.3px;
+}
+
+@media (max-width: 850px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px 20px 0;
+}
+
+.info-avatar,
+.info-text,
+.aboutMe {
+  border: 3px solid black;
+  background: url(https://templates.bulkstudio.com/classic/assets/images/texture.png);
+  padding: 30px 30px 50px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.info-avatar {
+  flex: 1;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #ffd700;
+  box-shadow: 12px 6px 4px 0px #141d2e;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40% 20%;
+  margin: 0 auto 40px;
+}
+
+.avatar img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.info-avatar h4 {
+  margin: 20px 0;
+}
+
+.info-avatar a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #141d2e;
+}
+
+.info-avatar a:hover {
+  color: #ffd700;
+  font-weight: 900;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.3px;
+}
+
+.info-text {
+  flex: 50%;
+}
+
+.info-text h2 {
+  margin: 20px 0;
+  color: #ffd700;
+  font-size: 4rem;
+  font-family: "WC Mano Negra Bta";
+  text-decoration: underline dotted #ffd700;
+  text-decoration-skip-ink: none;
+  -webkit-text-stroke-color: #141d2e;
+  -webkit-text-stroke-width: 0.3px;
+}
+
+.info-text p {
+  font-weight: 900;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 30px 0;
+}
+
+.aboutMe {
+  margin: 20px;
+}
+
+.aboutMe h2 {
+  font-family: "WC Mano Negra Bta";
+  font-size: 2rem;
+  text-align: center;
+}
+
+.list {
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.list li {
+  padding: 5px;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+}
+.table th {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 615px) {
+  .table {
+    font-size: 0.8rem;
+  }
+}
+
+.contact {
+  background-image: url(jacques-bopp-CIb3g_RUlb0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.form h2 {
+  color: #ffd700;
+  font-family: "WC Mano Negra Bta";
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-weight: 900;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.3px;
+  margin: 0px 40px;
+}
+
+@media (max-width: 660px) {
+  .form h2 {
+    font-size: 2.3rem;
+  }
+}
+
+.blur {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+input,
+textarea {
+  border: 3px solid #ffd700;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: "Balsamiq Sans";
+  color: #206018;
+}
+
+input:focus,
+textarea:focus {
+  border: 3px solid #206018;
+  outline: none;
+}
+
+.form-row input {
+  flex: 1 292px;
+}
+
+::placeholder {
+  color: #206018;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.button {
+  align-self: center;
+  color: #141d2e;
+  background-color: #ffd700;
+  transition-duration: 0.3s;
+  flex: 1;
+}
+
+.button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
